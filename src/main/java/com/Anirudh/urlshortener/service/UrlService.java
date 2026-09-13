@@ -22,8 +22,8 @@ public class UrlService {
           }
           String shortcode = sb.toString();
           UrlMapping mapping = new UrlMapping();
-          UrlMapping.setShortCode(shortcode);
-          UrlMapping.setLongUrl(longUrl);
+          mapping.setShortCode(shortcode);
+          mapping.setLongUrl(longUrl);
           repository.save(mapping);
           return shortcode;
       }
